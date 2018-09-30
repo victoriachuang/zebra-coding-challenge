@@ -1,0 +1,11 @@
+* {
+  font-family: "Muli", sans-serif;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.header {
+  display: flex;
+}

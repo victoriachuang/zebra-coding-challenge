@@ -1,0 +1,20 @@
+div.header-container {
+  float: left;
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+img.logo {
+  height: 72px;
+  float: left;
+  margin: 19px 25px 0 0;
+}
+
+div.info-container {
+  float: left;
+}
+
+.icons-wrapper {
+  display: flex;
+  flex-direction: row;
+}

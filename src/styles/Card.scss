@@ -1,0 +1,23 @@
+div.card {
+  width: 60%;
+  border: 1px solid #f1f4f4;
+  display: table;
+  margin-left: 20%;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px 25px;
+
+  .corner-triangle {
+    width: 0px;
+    height: 0px;
+    border-top: 47px solid #5c6cff;
+    border-right: 47px solid transparent;
+    margin: -10px -25px -35px -25px;
+
+    > svg {
+      width: 14px;
+      margin: -41px 0 47px 7px;
+    }
+  }
+}

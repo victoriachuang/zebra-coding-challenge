@@ -1,0 +1,26 @@
+div.rate-tag-container {
+  display: flex;
+  width: 25%;
+}
+
+p.tag {
+  color: #5c6cff;
+  font-weight: 800;
+  margin: 35px 15px 0 0;
+}
+
+h4.rate {
+  margin-left: auto;
+  margin-right: 5px;
+
+  span {
+    &.price {
+      font-size: 36px;
+    }
+
+    &.term {
+      font-size: 24px;
+      color: #959595;
+    }
+  }
+}

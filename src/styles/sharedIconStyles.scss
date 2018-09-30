@@ -1,0 +1,22 @@
+div.icons-container {
+  margin-right: 20px;
+}
+
+div {
+  &.feature-icons {
+    svg {
+      height: 30px;
+      width: 30px;
+      margin-right: 2px;
+    }
+  }
+
+  &.stars {
+    margin-top: 5px;
+    svg {
+      height: 15px;
+      width: 15px;
+      margin-right: 2px;
+    }
+  }
+}

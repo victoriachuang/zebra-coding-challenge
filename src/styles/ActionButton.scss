@@ -1,0 +1,60 @@
+button.action-link {
+  background-color: pink;
+  height: 63px;
+  width: 216px;
+  border-radius: 80px;
+  color: white;
+  margin: 0 0 28px 31px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg {
+    margin: 0 10px 0 -10px;
+  }
+}
+
+// blue button with gradient
+.blue-button {
+  background-color: #1bbdec;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1bbdec),
+    to(#4a8af1)
+  );
+  background-image: -webkit-linear-gradient(top, #1bbdec, #4a8af1);
+  background-image: -moz-linear-gradient(top, #1bbdec, #4a8af1);
+  background-image: -ms-linear-gradient(top, #1bbdec, #4a8af1);
+  background-image: -o-linear-gradient(top, #1bbdec, #4a8af1);
+  background-image: linear-gradient(to bottom, #1bbdec, #4a8af1);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      GradientType=0,
+      startColorstr=#1BBDEC,
+      endColorstr=#4A8AF1
+    );
+}
+
+// orange button with gradient
+.orange-button {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#f8ae00),
+    to(#f78500)
+  );
+  background-color: #f8ae00;
+  background-image: -webkit-linear-gradient(top, #f8ae00, #f78500);
+  background-image: -moz-linear-gradient(top, #f8ae00, #f78500);
+  background-image: -ms-linear-gradient(top, #f8ae00, #f78500);
+  background-image: -o-linear-gradient(top, #f8ae00, #f78500);
+  background-image: linear-gradient(to bottom, #f8ae00, #f78500);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      GradientType=0,
+      startColorstr=#F8AE00,
+      endColorstr=#F78500
+    );
+}
