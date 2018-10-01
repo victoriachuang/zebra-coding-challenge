@@ -6,6 +6,13 @@
   padding: 20px 0;
 }
 
+.header,
+.cards-container {
+  width: 60%;
+  margin-left: 20%;
+  min-width: 800px;
+}
+
 .header {
   display: flex;
 }

@@ -13,7 +13,8 @@ class FeaturesListWithDescription extends Component {
     };
   }
 
-  toggleCollapse = collapsed => {
+  toggleCollapse = () => {
+    const { collapsed } = this.state;
     this.setState({
       collapsed: !collapsed
     });
@@ -21,6 +22,7 @@ class FeaturesListWithDescription extends Component {
 
   render() {
     const { collapsed } = this.state;
+    const { featuresHtml, name, detailBody } = this.props;
     return (
       <div className="clearfix full-width">
         <div
@@ -32,21 +34,19 @@ class FeaturesListWithDescription extends Component {
             <div>
               <DescriptionSection
                 heading="Features:"
-                description={this.props.featuresHtml}
+                description={featuresHtml}
                 setDescriptionHtml
               />
               <DescriptionSection
-                heading={`Why ${this.props.name}?`}
-                description={this.props.detailBody}
+                heading={`Why ${name}?`}
+                description={detailBody}
               />
             </div>
           )}
         </div>
         <IconChevronDown
           className={`${collapsed ? 'toggle-collapse-icon' : 'rotated-x'}`}
-          onClick={() => {
-            this.toggleCollapse(collapsed);
-          }}
+          onClick={this.toggleCollapse}
         />
       </div>
     );

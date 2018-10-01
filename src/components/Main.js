@@ -31,10 +31,11 @@ class AppComponent extends React.Component {
     this.setState({ sortOrder });
   };
 
-  sortedCards = (cards, sortOrder) => {
+  sortCards = (cards, sortOrder) => {
     const { ascending } = this.sortOptions.find(
       option => option.value === sortOrder
     );
+    // determines whether the sorting should be ascending or descending
     const ascendingMultiplier = ascending ? 1 : -1;
     return cards.sort((card1, card2) => {
       // null or undefined values should go to the bottom of the sorted list
@@ -51,12 +52,13 @@ class AppComponent extends React.Component {
   };
 
   dropdownStyles = {
-    container: { display: 'flex' },
-    label: { marginRight: '20px' }
+    container: { display: 'flex', marginLeft: 'auto' },
+    label: { margin: 'auto 22px auto auto' },
+    select: { margin: 'auto 0', height: '36px' }
   };
 
   render() {
-    const { cardData } = this.state;
+    const { cardData, sortOrder } = this.state;
     return (
       <div className="content">
         <div className="content-container">
@@ -72,14 +74,11 @@ class AppComponent extends React.Component {
                 />
               </div>
               <div className="cards-container">
-                {this.sortedCards(
-                  cardData.carrier_cards,
-                  this.state.sortOrder
-                ).map((card, index) => {
-                  return (
+                {this.sortCards(cardData.carrier_cards, sortOrder).map(
+                  (card, index) => (
                     <Card cardData={card} topResult={index === 0} key={index} />
-                  );
-                })}
+                  )
+                )}
               </div>
             </div>
           ) : (

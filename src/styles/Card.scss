@@ -1,8 +1,5 @@
 div.card {
-  width: 60%;
   border: 1px solid #f1f4f4;
-  display: table;
-  margin-left: 20%;
   margin-top: 20px;
   border-radius: 5px;
   overflow: hidden;
@@ -20,4 +17,12 @@ div.card {
       margin: -41px 0 47px 7px;
     }
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }

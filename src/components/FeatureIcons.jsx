@@ -1,3 +1,5 @@
+// Contains icon SVGs
+
 require('styles/sharedIconStyles.scss');
 
 import React from 'react';
@@ -66,6 +68,10 @@ const getIcon = (iconName, key) => {
       return <IconFeaturesRoadside key={key} />;
     case 'IconFeaturesSR2':
       return <IconFeaturesSR2 key={key} />;
+    default:
+      // eslint-disable-next-line no-console
+      console.log('Warning: Icon missing for ', iconName);
+      return;
   }
 };
 const FeatureIcons = props => {
